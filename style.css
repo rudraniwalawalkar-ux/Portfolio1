@@ -1,0 +1,311 @@
+body {
+    background: #ece4d7;  /* warm oatmeal brown */
+  
+    font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+    margin: 0;
+    padding: 2rem;
+    color: #3d3529;  /* deep brown for better contrast */
+}
+
+/* main card */
+.card {
+    max-width: 750px;
+    margin: 0 auto;
+    background: #fffef7;  /* clean cream */
+    border-radius: 2rem;
+    padding: 2rem;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2d5c0;
+}
+
+/* header */
+.header-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 0.85rem;
+    color: #8b7355;  /* warm brown */
+    border-bottom: 1px solid #e2d5c0;
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.2rem;
+}
+
+.header-line h1 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0;
+    letter-spacing: 1px;
+    color: #7c9a6e;  /* sage green */
+}
+
+/* tabs */
+.nav-tabs {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.nav-tabs a {
+    text-decoration: none;
+    color: #8b7355;
+}
+
+.nav-tabs a.active {
+    color: #7c9a6e;  /* green for active */
+    font-weight: 500;
+    border-bottom: 2px solid #e8a598;  /* pink underline */
+}
+
+/* horizontal profile */
+.profile-horizontal {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin: 1.8rem 0;
+    background: #faf7f0;
+    padding: 1.2rem;
+    border-radius: 1.5rem;
+    border: 1px solid #e8dfcf;
+}
+
+.profile-avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
+    object-fit: cover;
+    border: 3px solid #e8a598;  /* pink border */
+}
+
+.username {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #7c9a6e;  /* sage green */
+    margin-bottom: 0.3rem;
+}
+
+.bio {
+    line-height: 1.45;
+    font-size: 0.9rem;
+    color: #5c4e3d;
+}
+
+/* pinned post */
+.pinned-note {
+    font-size: 0.75rem;
+    color: #e8a598;  /* pink */
+    border-left: 3px solid #7c9a6e;  /* green border */
+    padding-left: 0.75rem;
+    margin: 0.5rem 0 1rem 0;
+}
+
+/* mini grid */
+.mini-grid {
+    display: flex;
+    gap: 0.8rem;
+    margin: 1.5rem 0;
+}
+
+.grid-item {
+    background: #f5f0e6;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 1rem;
+    flex: 1;
+    font-size: 0.8rem;
+    color: #7c9a6e;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.grid-item:hover {
+    background: #e8a598;
+    color: white;
+}
+
+/* two columns */
+.two-columns {
+    display: flex;
+    gap: 1.5rem;
+    margin: 1.8rem 0;
+    flex-wrap: wrap;
+}
+
+.likes, .dislikes {
+    flex: 1;
+    background: #faf7f0;
+    padding: 1rem 1.2rem;
+    border-radius: 1.2rem;
+    border: 1px solid #e8dfcf;
+}
+
+.likes h3, .dislikes h3 {
+    margin-top: 0;
+    font-size: 0.9rem;
+    color: #db8270;
+    font-weight: 600;
+}
+
+/* social links */
+.social-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 1.5rem 0;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #7c9a6e;
+    font-size: 0.85rem;
+    background: #f5f0e6;
+    padding: 0.4rem 1.2rem;
+    border-radius: 2rem;
+    transition: all 0.2s;
+    font-weight: 500;
+}
+
+.social-links a:hover {
+    background: #7c9a6e;
+    color: white;
+}
+
+/* rules sections */
+.rules {
+    display: flex;
+    gap: 1.5rem;
+    margin: 1.8rem 0;
+    flex-wrap: wrap;
+}
+
+.rule-block {
+    background: #e4c3b0;
+    padding: 1rem;
+    border-radius: 1.2rem;
+    flex: 1;
+    border: 1px solid #e8dfcf;
+}
+
+.rule-block h3 {
+    font-size: 0.85rem;
+    margin-top: 0;
+    color: #e8a598;
+}
+
+.rule-block p {
+    font-size: 0.8rem;
+    color: #6b5a4a;
+    line-height: 1.4;
+}
+
+/* add friend button */
+.add-friend {
+    text-align: center;
+    margin: 2rem 0 1rem;
+}
+
+.add-friend a {
+    text-decoration: none;
+    background: #e8a598;  /* pink */
+    color: white;
+    padding: 0.7rem 2.2rem;
+    border-radius: 3rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.2s;
+    display: inline-block;
+}
+
+.add-friend a:hover {
+    background: #7c9a6e;  /* turns green on hover */
+    transform: scale(0.98);
+}
+
+/* skills */
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin: 1rem 0;
+}
+
+.skill-tags span {
+    background: #f5f0e6;
+    padding: 0.3rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.75rem;
+    color: #7c9a6e;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.skill-tags span:hover {
+    background: #7c9a6e;
+    color: white;
+    cursor: default;
+}
+
+/* projects */
+.projects ul {
+    padding-left: 1.2rem;
+    margin: 1rem 0;
+}
+
+.projects li {
+    margin: 0.5rem 0;
+    color: #472f12;
+    font-size: 0.85rem;
+}
+
+.projects li:hover {
+    color: #ea9e95;
+}
+
+/* contact */
+.contact {
+    margin: 1.5rem 0 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px dashed #e2d5c0;
+    font-size: 0.8rem;
+    color: #2e1e08;
+    text-align: center;
+}
+/* GitHub link peach */
+.github a {
+    color: #df7f6c;  /* peach */
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.github a:hover {
+    color: #3f1b13;  /* darker peach on hover */
+}
+
+/* footer */
+.footer-note {
+    text-align: center;
+    font-size: 0.65rem;
+    color: #2e1e08;
+    margin-top: 1.5rem;
+    letter-spacing: 1px;
+}
+
+/* responsive */
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+    .card {
+        padding: 1.2rem;
+    }
+    .two-columns, .rules {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .profile-horizontal {
+        flex-direction: column;
+        text-align: center;
+    }
+}

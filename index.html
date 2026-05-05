@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rudrani · Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        
+        <!-- Header area like the "nana's space" section -->
+        <div class="header-line">
+           <h1><span>✧ rudrani's space ✧</span></h1> 
+            <span class="time">🌿 <span id="live-time">--:-- --</span></span>
+        </div>
+
+        <!-- Navigation / tabs (Home | By | Interest) -->
+        <div class="nav-tabs">
+            <a href="#" class="active">Home</a>
+            
+        </div>
+
+  <div class="profile-horizontal">
+    <div class="profile-avatar">
+        <img src="rw.jpg" alt="Seiji's profile picture">
+    </div>
+    <div class="profile-info">
+        <div class="username">@rudrani</div>
+        <div class="bio">
+            🧸 : Hi!! I'm Rudrani · I like coding, reading, 
+            and playing football.
+            <br> ƪ(˘⌣˘)ʃ Currently pursuing a degree in AI and Data Science.
+            <br>
+            🐈 I love cats
+        </div>
+    </div>
+</div>
+
+        
+
+        <!--  Likes and Dislikes -->
+        <div class="two-columns">
+            <div class="likes">
+                <h3>☁️ Likes</h3>
+                <p>Music, reading, football, cats, physics </p>
+            </div>
+            <div class="dislikes">
+                <h3>☁️ Dislikes</h3>
+                <p>loud crowded places, honey, bugs</p>
+            </div>
+        </div>
+
+
+        <!-- skills  -->
+        <div class="skills">
+            <h3>✦ skills</h3>
+            <div class="skill-tags">
+                <span>HTML</span> <span>CSS</span> <span>Java</span> <span>C++</span>
+                <span>Python</span> <span>C</span> <span>Web Dev</span>
+            </div>
+        </div>
+        <!-- Favorite Book and Scientist -->
+<div class="two-columns">
+    <div class="likes">
+        <h3>📚 Favorite book</h3>
+         <p style="font-size: 2.0 rem; color: #45280fe1;"><strong>Kafka on the Shore</strong><br>by Haruki Murakami</p>
+        <p style="font-size: 0.8rem; color: #64b05f; margin-top: 0.5rem;">“Listen up - there's no war that will end all wars.”</p>
+    </div>
+    <div class="dislikes">
+        <h3>🔬 Favorite scientist</h3>
+        <p style="font-size: 2.0 rem; color: #45280fe1;"><strong>Nikola Tesla</strong></p>
+        <p style="font-size: 0.8rem; color: #45280fe1; margin-top: 0.5rem;">Engineer, Futurist and Inventor.</p>
+                <p style="font-size: 0.8rem; color: #64b05f; margin-top: 0.5rem;">“If you want to find the secrets of the universe, think in terms of energy, frequency and vibration." ~ Nikola Tesla.</p>
+   
+    </div>
+</div>
+
+
+        <!-- Mini projects -->
+        <div class="projects">
+            <h3>✦ mini projects</h3>
+            <ul>
+                <li> Number guessing game (C)</li>
+                <li> Color guessing game (Java)</li>
+                <li> THFC fan website (HTML)</li>
+                <li> Expense Tracker (FSD)</li>
+                <li> Calculator (C++)</li>
+            </ul>
+        </div>
+        <!-- GitHub -->
+<div class="github">
+    <h3>✦ github</h3>
+    <p>👾 <a href="https://github.com/rudraniwalawalkar-ux" target="_blank">Check out my GitHub Account! →</a></p>
+</div>
+
+        <!-- Contact -->
+        <div class="contact">
+            <h3>✦ contact</h3>
+            <p>📞 +6478953156 &nbsp;|&nbsp; ✉️ rudrani@test.com</p>
+        </div>
+
+        <!-- Footer / "Made with Carrd" style -->
+        <div class="footer-note">
+            ✦ made with html/css ✦
+        </div>
+
+    </div>
+    <script>
+    function updateTime() {
+        const now = new Date();
+        let hours = now.getHours();
+        let minutes = now.getMinutes();
+        const ampm = hours >= 12 ? 'p.m' : 'a.m';
+        
+        hours = hours % 12;
+        hours = hours ? hours : 12;
+        minutes = minutes < 10 ? '0' + minutes : minutes;
+        
+        const timeString = `${hours}:${minutes} ${ampm}`;
+        document.getElementById('live-time').textContent = timeString;
+    }
+    
+    updateTime();
+    setInterval(updateTime, 1000);
+</script>
+
+</body>
+</html>
